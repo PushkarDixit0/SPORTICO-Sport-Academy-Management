@@ -1,0 +1,213 @@
+.card {
+    position: relative;
+    background: linear-gradient(145deg, #dc1496, #e8a0bd);
+    border-radius: 12px;
+    padding: 10px 15px 10px 15px;
+    width: 30%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s step-start; 
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+  }
+
+.card:hover {
+    transform: scale(1.03); 
+    box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
+  }
+
+
+.slotsRemaining {
+    position: absolute;
+    top: -6px;
+    right: 6px;
+    background-color: #980780;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+/* .slotsRemaining:hover{
+    transform: scale(1.05);
+} */
+
+@keyframes move {
+    0% {
+      transform: translateX(10px); 
+    }
+    100% {
+      transform: translateX(20px); 
+    }
+  }
+
+.heading {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    padding-top:25px;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.enbtn{
+    display: flex;
+    justify-content: center;
+}
+
+.enrollButton {
+    position: relative;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: transparent;  /* Make the text transparent for the shine effect */
+    background-color: #71065f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;  /* To ensure shine effect stays within the button */
+}
+
+.enrollButton:hover {
+    background-color: #7a0066;
+}
+
+/* Shine effect */
+.btn_shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 10px;
+  color: #fff;
+  background: linear-gradient(to right, #fff, #f49be5, #f8b9ee);
+  background-position: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  text-align:center;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+
+.editBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #7a0066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(247, 24, 206, 0.3);
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  bottom: 10px;
+  right: 10px;
+  transition: all 0.3s;
+}
+.editBtn::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  background-color: rgb(194, 26, 121);
+  position: absolute;
+  z-index: 1;
+  transform: scale(0);
+  transition: all 0.3s;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+.editBtn:hover::before {
+  transform: scale(1);
+}
+.editBtn:hover {
+  box-shadow: 0 4px 8px rgba(147, 0, 119, 0.3);
+}
+
+.editBtn svg {
+  height: 17px;
+  fill: white;
+  z-index: 3;
+  transition: all 0.2s;
+  transform-origin: bottom;
+}
+.editBtn:hover svg {
+  transform: rotate(-15deg) translateX(5px);
+}
+.editBtn::after {
+  content: "";
+  width: 25px;
+  height: 1.5px;
+  position: absolute;
+  bottom: 19px;
+  left: -5px;
+  background-color: white;
+  border-radius: 2px;
+  z-index: 2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+}
+.editBtn:hover::after {
+  transform: scaleX(1);
+  left: 0px;
+  transform-origin: right;
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: 600; 
+  color: #21001c; 
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: 1rem;
+  color: #ffffff; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); 
+}
+
+strong {
+  color: #ffffff; 
+}
+
+.view{
+  position: absolute;
+  left: 18rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(247, 24, 206, 0.3);
+}

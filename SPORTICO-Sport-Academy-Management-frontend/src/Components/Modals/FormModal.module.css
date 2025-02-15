@@ -1,0 +1,135 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+}
+
+.modal:hover{
+    transform: scale(1.03); 
+    box-shadow: 0 6px 12px rgba(147, 0, 119, 0.5);
+}
+
+.overlay {
+    background: rgba(48, 61, 67, 0.55);
+}
+
+.modal_content {
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    padding: 1rem 3rem;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    width: 50vw;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    box-shadow: 0 6px 12px rgba(147, 0, 119, 0.5); 
+}
+
+.heading{
+    color: #780264;
+}
+
+.formTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f7e6f5;
+    border-radius: 10px;
+}
+
+.formTable td {
+    padding: 0.6rem;
+    font-size: 14px;
+}
+
+.formTable label {
+    font-weight: 500;
+    color: #4a003f;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    width: 100%;
+    position: relative;
+}
+
+.formTable label::after {
+    content: ':';
+    position: absolute;
+    right: -10px;
+    color: #4a003f;
+}
+
+.formTable input,
+.formTable textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 14px;
+    border: 1px solid #b23ba1;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #4a003f;
+    box-shadow: 0 2px 4px rgba(120, 2, 100, 0.2);
+}
+
+.formTable input::placeholder,
+.formTable textarea::placeholder {
+    color: #b23ba1;
+}
+
+.formTable textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.confirm_btn, 
+.cancel_btn {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(120, 2, 100, 0.2);
+}
+
+.confirm_btn {
+    background: #780264;
+    color: #ffffff;
+    border: 1px solid #4a003f;
+}
+
+
+
+.cancel_btn {
+    background: #ffffff;
+    color: #CF3636;
+    border: 1px solid #CF3636;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+

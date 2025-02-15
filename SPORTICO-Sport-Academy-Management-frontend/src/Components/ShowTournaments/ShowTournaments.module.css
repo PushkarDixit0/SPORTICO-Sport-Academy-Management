@@ -1,0 +1,101 @@
+.tournamentList {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.tournamentList .card {
+    flex-basis: 30%; 
+    margin-bottom: 20px; 
+}
+
+.msg{
+    margin-top: 200px;
+    color: #780264;
+    text-align: center;
+}
+
+.animation {
+    display: inline-block;
+    animation: scaleInOut 1.5s infinite alternate;
+}
+
+@keyframes scaleInOut {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+}
+
+.heading{
+    color: #780264;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+  
+  .add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(147, 0, 119, 0.5);
+    /* padding: 6px; */
+    text-align: center;
+    position: fixed; 
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 500;
+}
+
+
+  .addButton {
+    background-color: #f4f4f4;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .addButton:hover {
+    transform: rotate(90deg);
+  }
+  
+  .addButtonIcon {
+    border: none;
+    width: 50px;
+    height: 50px;
+    stroke: #780264;
+    fill: none;
+    transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+  }
+  
+  .addButton:hover .addButtonIcon {
+    fill: #f36292;
+  }
+  
+  .addButton:active .addButtonIcon {
+    stroke: #fbcfe8; 
+    fill: #f36292; 
+    transition-duration: 0s;
+  }
+  
+
+  .backBtn{
+    background-color: #ffffff;
+    color: #780264;
+    padding: 3px 6px;
+    border-radius: 12px;
+    font-weight: 600;
+    align-items: center;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    top: 75px;
+    left: 20px;
+  }

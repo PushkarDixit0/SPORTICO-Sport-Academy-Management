@@ -1,0 +1,76 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.profileCard {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 520px;
+    text-align: center;
+}
+
+.header {
+    font-size: 22px;
+    font-weight: bold;
+    color: #980780;
+    margin-bottom: 15px;
+}
+
+.details {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.row {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    padding: 8px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.row strong {
+    color: #980780;
+}
+
+
+.button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #980780;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #7c0663;
+}
+
+.loading {
+    font-size: 18px;
+    color: #980780;
+}
+
+
+.input{
+    outline: none;
+    border-radius: 12px;
+    padding: 2px 8px;
+    border: 1px solid gray;
+    margin-left: 3px;
+}

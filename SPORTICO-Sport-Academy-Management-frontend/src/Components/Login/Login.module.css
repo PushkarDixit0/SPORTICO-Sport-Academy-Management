@@ -1,0 +1,117 @@
+/* Register.css */
+
+/* Custom styles for your registration page */
+
+.container1 {
+    margin: 60px;
+    border: 2px solid #7b006d; 
+    border-radius: 12px; 
+    padding: 10px 35px 10px 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.container1:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+
+.footer {
+    background-color: #f8f9fa;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h3 {
+    color: #333;
+}
+
+h6 {
+    color: #555;
+}
+
+p {
+    color: #777;
+}
+
+.text-primary {
+    cursor: pointer !important;
+    font-weight: bold;
+}
+
+.text-primary:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    background-color: #7b006d;
+    color: white; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 8px 18px; 
+    font-size: 18px; 
+    font-weight: 500;
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.submit:hover {
+    background-color: #980780; 
+    transform: scale(1.02); 
+}
+
+.submit:active {
+    transform: scale(1); 
+}
+
+
+
+.title {
+    font-size: 28px;
+    color: #980780;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before, 
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #980780;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title::before {
+    left: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.title::after {
+    left: 0px; 
+    width: 20px;
+    height: 20px;
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    from {
+        transform: translateY(-50%) scale(0.9);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-50%) scale(1.6);
+        opacity: 0;
+    }
+}
+

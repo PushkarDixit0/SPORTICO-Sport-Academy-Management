@@ -1,0 +1,76 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    text-align: center;
+  }
+  
+  .modalContent h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .inputField {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    background: #7a0066;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:disabled {
+    background: #999;
+    cursor: not-allowed;
+  }
+  
+  .success {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .cancelButton {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .cancelButton:hover {
+    background: #c82333;
+  }
+  

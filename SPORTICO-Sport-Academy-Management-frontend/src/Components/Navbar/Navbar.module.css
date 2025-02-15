@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #930077; 
+  padding: 10px 20px;
+  color: white;
+  width: 100%;
+  z-index: 100; 
+}
+
+
+  
+  .logo img {
+    height: 35px;
+    cursor: pointer;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 15px;
+    margin-left: 50px;
+  }
+  
+  .navButton {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    border-radius: 12px;
+  }
+  
+  .navButton:hover {
+    background-color: rgba(255, 64, 129, 0.8); 
+  }
+  
+  .active {
+    background-color: #ff4081; 
+    font-weight: 500;
+
+  }
+  
+  .profileMenu {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 1000;
+  }
+  
+  .profileIcon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .menuDropdown {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: white;
+    color: black;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    width: 200px;
+  }
+  
+  .menuDropdown.open {
+    display: block;
+  }
+  
+  .menuDropdown li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .menuDropdown li:hover {
+    background: rgba(147, 0, 119, 0.1);
+  }
+
+  .searchContainer {
+    margin-left: 44rem;
+  }
+  
+  .searchInput {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 180px;
+  }
+  
+  .searchInput:focus {
+    border-color: #980780;
+  }
+  .authLinks {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .authLinks button {
+    background-color: white;
+    color: #980780;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .authLinks button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
